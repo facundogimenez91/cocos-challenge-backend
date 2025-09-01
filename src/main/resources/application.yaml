@@ -1,0 +1,14 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://ep-falling-mouse-a5gsvuuk-pooler.us-east-2.aws.neon.tech:5432/neondb?sslMode=require
+    username: neondb_owner
+    password: npg_8ox5BzmUwvat
+
+portfolio:
+  fail-on-data-corruption: false
+
+instrument:
+  ttl-min: 60
+  max-size: 5000
+  limit: 10
+

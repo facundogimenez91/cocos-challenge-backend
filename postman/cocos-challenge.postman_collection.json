@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "ba5693ba-887d-4818-9471-58a365780904",
+		"name": "cocos-challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28143380"
+	},
+	"item": [
+		{
+			"name": "Get Portfolio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/challenge/v1/portfolio/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"challenge",
+						"v1",
+						"portfolio",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Instrument",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/challenge/v1/instrument/search/pam",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"challenge",
+						"v1",
+						"instrument",
+						"search",
+						"pam"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"instrumentTicker\": \"PAMP\",\n  \"userId\": 1,\n  \"type\": \"LIMIT\",\n  \"price\" : 1222,\n  \"side\": \"BUY\",\n  \"amount\": 150000.00\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/challenge/v1/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"challenge",
+						"v1",
+						"order"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
