@@ -2,13 +2,13 @@
 
 ### Stack utilizado
 
-* Java 17 (lenguaje)
-* Project Reactor (programacion reactiva no bloqueante)
-* Spring Webflux (framework)
-* Caffeine (cache)
-* Gradle (builder)
-* Docker (deploy & run)
-* Postman (usage)
+* Java 17
+* Project Reactor
+* Spring Webflux
+* Caffeine
+* Gradle
+* Docker
+* Postman
 
 ### Como ejecutar y probar
 
